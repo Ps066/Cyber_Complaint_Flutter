@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "334787193161",
+    "project_id": "cyber-complaints-flutter",
+    "storage_bucket": "cyber-complaints-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334787193161:android:e32c8c057911f8efd75298",
+        "android_client_info": {
+          "package_name": "com.example.cybercomplaint"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzhOcJuIQqrcfc1VrKLI_Q2a077sAYF2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334787193161:android:d7b6f31b002a643fd75298",
+        "android_client_info": {
+          "package_name": "com.example.cybercomplaints_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzhOcJuIQqrcfc1VrKLI_Q2a077sAYF2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
