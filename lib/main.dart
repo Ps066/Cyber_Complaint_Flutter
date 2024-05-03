@@ -1,6 +1,9 @@
 
+import 'package:cybercomplaints_flutter/Screens/Splash_Screen.dart';
 import 'package:cybercomplaints_flutter/Screens/complain.dart';
+import 'package:cybercomplaints_flutter/Screens/home_page.dart';
 import 'package:cybercomplaints_flutter/Screens/login_main.dart';
+import 'package:cybercomplaints_flutter/Screens/userProfile.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'Screens/signup.dart';
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.blue
       ),
       debugShowCheckedModeBanner: false,
-      home:SignUpScreen(),
+      home:SplashScreen(),
     );
   }
 }

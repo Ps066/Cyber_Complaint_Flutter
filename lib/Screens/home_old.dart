@@ -18,24 +18,24 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // print(" Current height "+MediaQuery.of(context).size.height.toString());
     return Scaffold(
-      // bottomNavigationBar: BottomNavigationBar(
-      //   selectedItemColor: Colors.blue, // Change to your desired color
-      //   unselectedItemColor: Colors.grey, // Change to your desired color
-      //   selectedLabelStyle: TextStyle(color: Colors.blue), // Change to your desired color
-      //   unselectedLabelStyle: TextStyle(color: Colors.grey),
-      //   currentIndex: _currentIndex,
-      //   items: [
-      //     BottomNavigationBarItem(
-      //         icon: Icon(Icons.home_filled),
-      //         label: 'home'),
-      //     BottomNavigationBarItem(
-      //         icon: Icon(Icons.book),
-      //         label: 'Bookings'),
-      //     BottomNavigationBarItem(icon: Icon(Icons.list),label: 'home'),
-      //     BottomNavigationBarItem(icon: Icon(Icons.home_filled),label: 'home'),
-      //
-      //   ],
-      // ),
+      bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.blue, // Change to your desired color
+        unselectedItemColor: Colors.grey, // Change to your desired color
+        selectedLabelStyle: TextStyle(color: Colors.blue), // Change to your desired color
+        unselectedLabelStyle: TextStyle(color: Colors.grey),
+        currentIndex: _currentIndex,
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: 'home'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.book),
+              label: 'Bookings'),
+          BottomNavigationBarItem(icon: Icon(Icons.list),label: 'home'),
+          BottomNavigationBarItem(icon: Icon(Icons.home_filled),label: 'home'),
+
+        ],
+      ),
       backgroundColor: Colors.blue[800],
       body: SafeArea(
         child: Column(children: [
@@ -64,17 +64,15 @@ class _HomePageState extends State<HomePage> {
                       ],
                     ),
 
-                    InkWell(
-                      child: Container(
-                        decoration: BoxDecoration(
-                            color: Colors.blue[600],
-                            borderRadius: BorderRadius.circular(12)
-                        ),
-                        padding: EdgeInsets.all(12),
-                        child: Icon(
-                          Icons.person,
-                          color: Colors.white,
-                        ),
+                    Container(
+                      decoration: BoxDecoration(
+                          color: Colors.blue[600],
+                          borderRadius: BorderRadius.circular(12)
+                      ),
+                      padding: EdgeInsets.all(12),
+                      child: Icon(
+                        Icons.info,
+                        color: Colors.white,
                       ),
                     )
                   ],),

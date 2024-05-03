@@ -341,7 +341,9 @@ class InitState extends State<SignUpScreen> {
                         onTap: () {
                           // Write Tap Code Here.
                           // Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
-
+                          Navigator.pushReplacement(context, MaterialPageRoute(
+                              builder: (context) => LoginScreen()
+                          ));
                         },
                       )
                     ],

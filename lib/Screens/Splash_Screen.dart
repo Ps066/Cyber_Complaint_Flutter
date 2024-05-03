@@ -3,13 +3,14 @@
 import 'dart:async';
 
 
+import 'package:cybercomplaints_flutter/Screens/login_main.dart';
+import 'package:cybercomplaints_flutter/Screens/signup.dart';
 import 'package:flutter/material.dart';
 
-// import 'login_screen.dart';
 
-// void main() {
-//   runApp(SplashScreen());
-// }
+void main() {
+  runApp(SplashScreen());
+}
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -22,19 +23,19 @@ class StartState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    // startTime();
+    startTime();
+  }
+
+  startTime() async {
+    var duration = Duration(seconds: 3);
+    return new Timer(duration, route);
   }
   //
-  // startTime() async {
-  //   var duration = Duration(seconds: 4);
-  //   return new Timer(duration, route);
-  // }
-  // //
-  // route() {
-  //   Navigator.pushReplacement(context, MaterialPageRoute(
-  //       builder: (context) => LoginScreen()
-  //   ));
-  // }
+  route() {
+    Navigator.pushReplacement(context, MaterialPageRoute(
+        builder: (context) => SignUpScreen()
+    ));
+  }
 
   @override
   Widget build(BuildContext context) {

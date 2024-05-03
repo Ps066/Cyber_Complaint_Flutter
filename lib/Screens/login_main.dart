@@ -4,6 +4,7 @@ import 'dart:io';
 // import 'package:emahavitran/signup.dart';
 // import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cybercomplaints_flutter/Screens/home_page.dart';
+import 'package:cybercomplaints_flutter/Screens/signup.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -255,6 +256,9 @@ class StartState extends State<LoginScreen> {
                           //       builder: (context) => SignUpScreen(),
                           //     )
                           // );
+                          Navigator.pushReplacement(context, MaterialPageRoute(
+                              builder: (context) => SignUpScreen()
+                          ));
                         },
                       )
                     ],
